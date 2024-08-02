@@ -1,4 +1,4 @@
-FROM hub.docker.hpecorp.net/hub/golang:1.18-alpine
+FROM golang:1.18-alpine
 RUN addgroup -S go && adduser -S go -G go
 USER go:go
 WORKDIR /home/go
